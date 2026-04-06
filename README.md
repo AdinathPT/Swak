@@ -8,9 +8,9 @@ SWAK (Project Siraal) is an advanced, privacy-first Chrome Extension designed to
 
 ## 🌄 Demo
 
-<img width="1919" height="1033" alt="Screenshot 2026-04-06 071829" src="https://github.com/user-attachments/assets/3f5b3e50-1b83-4efc-bd32-92593bbeb883" />
-<img width="1919" height="1001" alt="Screenshot 2026-04-06 071801" src="https://github.com/user-attachments/assets/f9bcce02-7f31-4d1a-9d70-0aa20da2dd39" />
 <img width="426" height="745" alt="Screenshot 2026-04-06 071454" src="https://github.com/user-attachments/assets/f5483c35-23cd-4ab7-9f81-c55d16da78df" />
+<img width="1919" height="1001" alt="Screenshot 2026-04-06 071801" src="https://github.com/user-attachments/assets/f9bcce02-7f31-4d1a-9d70-0aa20da2dd39" />
+<img width="1919" height="1033" alt="Screenshot 2026-04-06 071829" src="https://github.com/user-attachments/assets/3f5b3e50-1b83-4efc-bd32-92593bbeb883" />
 
 ## 📽️Video Demo
 https://github.com/user-attachments/assets/cae0570c-fa98-413d-b812-bf63b8ff604d
