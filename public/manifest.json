@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "version":"1.0.0",
+  "name": "SWAK",
+  "action":{
+    "default_popup":"index.html",
+    "default_icon":"favicon.png"
+  },
+  "permissions":["scripting","tabs","activeTab","system.memory","storage","tabGroups","alarms"],
+  "host_permissions":["http://*/*","https://*/*","<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons":{
+    "128":"favicon.png"
+  }
+
+}
