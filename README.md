@@ -2,7 +2,7 @@
 
 **AI-Powered Tab Orchestration & Resource Optimization at the Edge.**
 
-SWAK (Project Siraal) is an advanced, privacy-first Chrome Extension designed to intelligently manage browser tabs, detect memory leaks, and optimize system RAM. It leverages Chrome's native on-device AI (Gemini Nano) to automatically categorize tabs, providing a sleek, Figma-inspired dashboard to monitor and control your browser's resource consumption in real time.
+SWAK is an Chrome Extension designed to intelligently manage browser tabs, detect memory leaks, and help you optimize system RAM. Also It leverages Chrome's native on-device AI (Gemini Nano) to automatically categorize tabs.
 
 -----
 ## Demo
@@ -17,72 +17,28 @@ https://github.com/user-attachments/assets/cae0570c-fa98-413d-b812-bf63b8ff604d
 
 ## Key Features
 
-  * **Local AI Tab Grouping:** Automatically categorizes open tabs into logical groups using Chrome's on-device `LanguageModel` API (Gemini Nano). Batch-processing ensures rapid inference without sending any browsing data to the cloud.
-  * **Active Memory Leak Detection:** A background service worker periodically injects "scout" scripts to monitor DOM node growth across tabs, alerting you to pages that are actively leaking memory over time.
-  * **Resource Orchestrator:** Instantly identify and manage high-resource tabs. The dashboard calculates and displays live metrics for **Sleeping Tabs**, **Heavy RAM Usage**, and **Threat Levels**.
-  * **Auto-Close Duplicates:** Smart URL tracking allows users to instantly identify and wipe out redundant tabs, freeing up workspace and memory with a single click.
-  * **Premium Figma-Like UI:** A dark-themed, highly polished interface featuring real-time Recharts radial gauges, custom neon-blue gradient scrollbars, and dynamic SVG cursors to provide a native-app feel.
+  * **Local AI Tab Grouping:** 
+  * **Active Memory Leak Detection:**
+  * **RAM management:** 
+  * **Auto-Close Duplicates:** 
 
 -----
-
-## Tech Stack
-
-### Frontend UI (Popup)
-
-  * **ReactJS** + **Vite**: High-performance UI rendering and rapid bundling.
-  * **Tailwind CSS**: For modern, responsive, and highly customizable styling.
-  * **Recharts**: For rendering the live, dynamic System Resource Gauge.
-  * **Custom CSS**: Implementing custom SVG cursors and WebKit scrollbars for a premium UX.
-
-### Background & Extension Infrastructure
-
-  * **Manifest V3**: Modern, secure Chrome Extension architecture.
-  * **Service Workers (`background.js`)**: Runs persistent alarms and memory leak detection loops.
-  * **Chrome APIs**: Deep integration with `chrome.tabs`, `chrome.scripting`, `chrome.system.memory`, `chrome.alarms`, and `chrome.storage.session`.
-  * **Local Edge AI**: `window.ai` / `LanguageModel` for zero-latency, private text processing.
-----
-
-## Local Installation Guide
-
-Follow these steps to build and load SWAK directly into your Chrome Browser.
-
-### Prerequisites
-
-  * **Browser:** Google Chrome (Version 127+ recommended for Local AI features).
-  * **Node.js:** Version 18+.
-  * **Chrome Flags:** On-device AI must be enabled via `chrome://flags` (Enabling Prompt API for Gemini Nano).
-
-### 1\. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/swak-tabs-manager.git
-cd swak-tabs-manager
-```
 
 ## ⚙️ Setup Guidelines
 
 To run SWAK locally and install it as an unpacked extension in Chrome, follow these steps:
 
-### 1\. Build the Frontend
+### 1\. Unpack the File
+(download the zip file)[https://github.com/AdinathPT/Swak/releases/tag/1.0.0]
 
-SWAK uses Vite to bundle the React application.
+1. Download the source code zip, and unzip it in a folder (note: if you delete the folder the extension will be uninstalled).
+2.  Open Google Chrome and navigate to .
+3.  Toggle **Developer mode** ON (top right corner).
+4.  Click the **Load unpacked** button (top left).
+5.  Select the `dist/` folder that was just generated inside your project directory.
 
-```bash
-# Install all required npm packages
-npm install
 
-# Compile the React code and move public files to /dist
-npm run build
-```
-
-### 2\. Load the Extension into Chrome
-
-1.  Open Google Chrome and navigate to `chrome://extensions/`.
-2.  Toggle **Developer mode** ON (top right corner).
-3.  Click the **Load unpacked** button (top left).
-4.  Select the `dist/` folder that was just generated inside your project directory.
-
-### 3\. Enabling Local AI (Gemini Nano)
+### 2\. Enabling Local AI (Gemini Nano)
 
 To use the AI tab grouping feature, ensure your Chrome browser is configured for edge inference:
 
