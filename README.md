@@ -117,4 +117,21 @@ To use the AI tab grouping feature, ensure your Chrome browser is configured for
 
 -----
 
+# How to install
+There are two ways:
+
+# Method 1: Load Unpacked
+1. Download the source code zip, and unzip it in a folder (note: if you delete the folder the extension will be uninstalled).
+2. Go to chrome://extensions/ (i can't put a link to there)
+3. Turn on Developer Mode on the top-right corner
+4. Click "Load Unpacked"
+5. Select your folder that you unzipped to (should contain a manifest.json file) and it's done!
+# Method 2: CRX file
+1. Download spaceshipvote.crx (you may have to use right click -> Save Link As)
+2. Go to chrome://extensions/ (i can't put a link to there)
+3. Turn on Developer Mode on the top-right corner
+4. Drag-and-drop the file
+5. Chrome will say it's "unsafe" because I dont have a chrome webstore license yet.
+
+
 *Developed with ☕ for a faster, cleaner browsing experience.*
