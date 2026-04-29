@@ -26,7 +26,6 @@ interface TabInfoType {
   width: number;
   windowId: number;
 }
-
 interface TypesForamttedData {
   id: number;
   title: string;
